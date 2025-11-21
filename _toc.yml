@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: README
+chapters:
+  - file: notebooks/00_index
+    title: "Index & Quick Start"
+  - file: notebooks/01_neural_networks_basics
+    title: "Chapter 1: Neural Networks Basics"
+  - file: notebooks/02_convolutional_networks
+    title: "Chapter 2: Convolutional Neural Networks"
+  - file: notebooks/03_transformers
+    title: "Chapter 3: Transformers"
+  - file: notebooks/04_vision_transformers
+    title: "Chapter 4: Vision Transformers"

@@ -1,13 +1,9 @@
-# Core Deep Learning Libraries
-# Choose PyTorch OR TensorFlow based on your preference
-# For PyTorch (recommended), uncomment these:
-torch>=2.0.0
-torchvision>=0.15.0
-torchaudio>=2.1.0
+# TensorFlow-focused requirements
+# For users who prefer TensorFlow/Keras
 
-# For TensorFlow, uncomment these:
-# tensorflow>=2.13.0
-# keras>=2.13.0
+# Deep Learning
+tensorflow>=2.13.0
+keras>=2.13.0
 
 # Data Processing
 numpy>=1.24.0

@@ -1,8 +1,12 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# C extensions
 *.so
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -23,68 +27,47 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Virtual Environments
-venv/
-ENV/
-env/
-.venv/
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
 
 # IPython
 profile_default/
 ipython_config.py
 
-# PyTorch
-*.pth
-*.pt
-*.ckpt
+# pyenv
+.python-version
 
-# TensorFlow
-*.h5
-*.pb
-saved_model/
-checkpoint
-
-# Data files (large datasets)
-*.csv
-*.tsv
-*.fasta
-*.fastq
-*.fa
-*.fq
-*.bam
-*.sam
-*.vcf
-*.bed
-*.bigWig
-*.bw
-*.bigBed
-*.bb
-
-# Compressed files
-*.zip
-*.tar.gz
-*.tar.bz2
-*.gz
-*.bz2
-
-# Model checkpoints and logs
-models/*.pth
-models/*.pt
-models/*.h5
-logs/
-runs/
-wandb/
-mlruns/
-
-# Cache directories
-.cache/
-cache/
-data/cache/
-__MACOSX/
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # IDEs
 .vscode/
@@ -92,53 +75,36 @@ __MACOSX/
 *.swp
 *.swo
 *~
-.DS_Store
 
-# OS
+# macOS
 .DS_Store
 Thumbs.db
-desktop.ini
 
-# Project specific
-results/
-outputs/
-tmp/
-temp/
+# Data files (keep structure but ignore large files)
+data/raw/*.csv
+data/raw/*.fasta
+data/raw/*.txt
+data/raw/*.h5
+data/raw/*.hdf5
+data/processed/*.npy
+data/processed/*.pkl
 
-# Keep directory structure but ignore contents
-data/*
-!data/.gitkeep
-!data/README.md
-!data/download_scripts/
+# Model files
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.ckpt
+*.pkl
+models/
 
-models/*
-!models/.gitkeep
-!models/README.md
+# Logs
+*.log
+logs/
+tensorboard_logs/
 
-results/*
-!results/.gitkeep
-!results/README.md
+# Docker
+.dockerignore
 
-# Exceptions (files to keep)
-!data/sample_data/
-!notebooks/**/*.ipynb
-
-# Environment files (keep templates)
-!environment.yml.template
-!requirements.txt.template
-
-# Documentation builds
-docs/_build/
-docs/_static/
-docs/_templates/
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-
-# MyPy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# Jupyter Book build
+_build/
