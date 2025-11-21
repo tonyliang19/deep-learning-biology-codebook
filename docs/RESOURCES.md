@@ -2,7 +2,13 @@
 
 This document provides a comprehensive list of resources that have informed this codebook, including books, websites, papers, and tools. These materials are recommended for deeper understanding and continued learning in deep learning for biology.
 
-> **Note**: This codebook uses **PyTorch** exclusively. However, we include references to other frameworks (TensorFlow, JAX, etc.) for educational purposes and broader learning.
+> **Note**: This codebook uses **PyTorch** exclusively for all code examples and implementations. PyTorch was chosen for its:
+> - Dynamic computational graphs that make debugging easier
+> - Pythonic API that's intuitive for researchers
+> - Strong community support in academic research
+> - Excellent documentation and learning resources
+> 
+> While we reference other frameworks (TensorFlow, JAX, etc.) in this resource list for educational purposes and broader learning, all notebooks and code in this repository use PyTorch.
 
 ## 📚 Books
 

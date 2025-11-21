@@ -118,8 +118,8 @@ conda env update -f environment.yml
 
 The main packages you'll be using include:
 
-**Deep Learning Frameworks:**
-- `torch` (PyTorch) - Primary DL framework
+**Deep Learning Framework:**
+- `torch` (PyTorch) - Deep learning framework
 - `torchvision` - Computer vision utilities
 - `torchaudio` - Audio processing utilities
 
