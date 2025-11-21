@@ -1,51 +1,97 @@
-# Building the Book
+# Building the Book with Quarto
 
-This codebook can be converted into an interactive online book using [Jupyter Book](https://jupyterbook.org/).
+This codebook is built as an interactive online book using [Quarto](https://quarto.org/). Quarto provides excellent support for Jupyter notebooks with beautiful rendering of code outputs, plots, and mathematical equations.
+
+## Why We Switched from Jupyter Book to Quarto
+
+**Advantages of Quarto:**
+- Better rendering of notebook outputs and plots
+- More modern and actively developed
+- Excellent support for multiple output formats (HTML, PDF, ePub)
+- Better integration with Python, R, and Julia
+- More flexible customization options
+- Faster build times
+- Better mobile responsiveness
 
 ## Prerequisites
 
+### Install Quarto
+
+**Linux:**
 ```bash
-pip install jupyter-book
+# Download and install the latest version
+wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.549/quarto-1.4.549-linux-amd64.deb
+sudo dpkg -i quarto-1.4.549-linux-amd64.deb
+```
+
+**macOS:**
+```bash
+# Using Homebrew
+brew install quarto
+
+# Or download the installer from https://quarto.org/docs/get-started/
+```
+
+**Windows:**
+Download and run the installer from [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+
+Verify installation:
+```bash
+quarto --version
 ```
 
 ## Building the HTML Book
 
-### 1. Build the book
+### 1. Render the book
+
+From the repository root:
 
 ```bash
-jupyter-book build .
+quarto render
 ```
 
 This will:
-- Generate HTML from notebooks and markdown files
-- Create a table of contents
-- Add navigation elements
-- Apply the theme
+- Execute or use cached outputs from all Jupyter notebooks
+- Generate HTML from notebooks and Quarto markdown files
+- Create a table of contents and navigation
+- Apply the custom theme
+- Build the search index
 
-### 2. View the book
+The output will be in the `_book/` directory.
 
-Open `_build/html/index.html` in your browser, or serve it locally:
+### 2. Preview the book
+
+For live preview with auto-reload:
 
 ```bash
-# Option 1: Python's built-in server
-cd _build/html
-python -m http.server 8000
+quarto preview
+```
 
-# Option 2: Using Jupyter Book's serve command
-jupyter-book build . --builder dirhtml
+This will:
+- Start a local web server
+- Open your browser automatically
+- Watch for file changes and auto-reload
+
+Or manually serve the built book:
+
+```bash
+cd _book
+python -m http.server 8000
 ```
 
 Then open http://localhost:8000 in your browser.
 
 ## Building a PDF
 
+Quarto can generate PDF output:
+
 ```bash
-jupyter-book build . --builder pdflatex
+quarto render --to pdf
 ```
 
 Requirements:
-- LaTeX distribution (e.g., TeX Live, MiKTeX)
-- Additional packages may be needed
+- LaTeX distribution (TeX Live recommended)
+- Install with: `quarto install tinytex` (Quarto's lightweight LaTeX)
 
 ## Publishing to GitHub Pages
 

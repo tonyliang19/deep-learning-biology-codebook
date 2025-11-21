@@ -1,0 +1,70 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Deep Learning Biology Codebook"
+  author: "Deep Learning Biology Team"
+  date: today
+  repo-url: https://github.com/tonyliang19/deep-learning-biology-codebook
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    - part: "Fundamentals"
+      chapters:
+        - notebooks/01_neural_networks_basics.ipynb
+        - notebooks/02_convolutional_networks.ipynb
+        - notebooks/03_transformers.ipynb
+        - notebooks/04_vision_transformers.ipynb
+    - part: "Applied Examples"
+      chapters:
+        - notebooks/05_CNN_DNA_Sequence_Classification.ipynb
+        - notebooks/06_RNN_LSTM_Protein_Sequence.ipynb
+        - notebooks/07_Autoencoder_Gene_Expression.ipynb
+        - notebooks/08_Transfer_Learning_Cell_Images.ipynb
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Notebooks"
+        menu:
+          - text: "Neural Networks Basics"
+            href: notebooks/01_neural_networks_basics.ipynb
+          - text: "Convolutional Networks"
+            href: notebooks/02_convolutional_networks.ipynb
+          - text: "Transformers"
+            href: notebooks/03_transformers.ipynb
+          - text: "Vision Transformers"
+            href: notebooks/04_vision_transformers.ipynb
+    right:
+      - icon: github
+        href: https://github.com/tonyliang19/deep-learning-biology-codebook
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: 
+      light: [cosmo, custom.scss]
+      dark: [darkly, custom.scss]
+    code-copy: true
+    code-fold: false
+    code-tools: true
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 3
+    link-external-newwindow: true
+    fig-width: 8
+    fig-height: 6
+    fig-dpi: 300
+    execute:
+      freeze: auto
+      cache: true
+      echo: true
+      warning: false
+      message: false
+
+jupyter: python3

@@ -108,3 +108,7 @@ tensorboard_logs/
 
 # Jupyter Book build
 _build/
+
+# Quarto build
+_book/
+/.quarto/

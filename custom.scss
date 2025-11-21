@@ -1,0 +1,35 @@
+/*-- scss:defaults --*/
+$primary: #0066cc;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+
+/*-- scss:rules --*/
+.callout-note {
+  border-left-color: $info;
+}
+
+.callout-tip {
+  border-left-color: $success;
+}
+
+.callout-important {
+  border-left-color: $danger;
+}
+
+.callout-warning {
+  border-left-color: $warning;
+}
+
+code {
+  color: #c7254e;
+  background-color: #f9f2f4;
+}
+
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
