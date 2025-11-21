@@ -51,6 +51,7 @@ coverage.xml
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*/.ipynb_checkpoints/*
 
 # IPython
 profile_default/
@@ -77,13 +78,33 @@ venv.bak/
 
 # macOS
 .DS_Store
+Thumbs.db
 
-# Model files (optional - uncomment if needed)
-# *.h5
-# *.pth
-# *.ckpt
-# *.pkl
+# Data files (keep structure but ignore large files)
+data/raw/*.csv
+data/raw/*.fasta
+data/raw/*.txt
+data/raw/*.h5
+data/raw/*.hdf5
+data/processed/*.npy
+data/processed/*.pkl
 
-# Data files (optional - uncomment if needed)
-# data/
-# datasets/
+# Model files
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.ckpt
+*.pkl
+models/
+
+# Logs
+*.log
+logs/
+tensorboard_logs/
+
+# Docker
+.dockerignore
+
+# Jupyter Book build
+_build/

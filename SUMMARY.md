@@ -1,4 +1,4 @@
-# Deep Learning Biology Codebook - Summary
+# Deep Learning Biology Codebook - Complete Summary
 
 ## 🎯 Project Overview
 
@@ -6,7 +6,9 @@ This is a comprehensive, user-friendly deep learning codebook designed for biolo
 
 ## 📊 What's Included
 
-### Core Content (5 Notebooks)
+### Part 1: Fundamental Learning Track (5 Notebooks)
+
+Educational notebooks that build knowledge progressively from basics to advanced architectures:
 
 | Chapter | Title | Topics Covered | Biology Application |
 |---------|-------|----------------|---------------------|
@@ -16,10 +18,44 @@ This is a comprehensive, user-friendly deep learning codebook designed for biolo
 | 3 | Transformers | Attention, self-attention, positional encoding, BERT/GPT | Protein Sequence Analysis |
 | 4 | Vision Transformers | Patch embeddings, ViT architecture, ViT vs CNNs | Medical Image Analysis |
 
+### Part 2: Applied Biology Track (4 Notebooks)
+
+Complete, end-to-end examples of applying deep learning to real biological problems:
+
+#### 1. CNN for DNA Sequence Classification
+**File**: `notebooks/01_CNN_DNA_Sequence_Classification.ipynb`
+- **Cells**: 29 total (15 markdown, 14 code)
+- **Topics**: One-hot encoding, Conv1D layers, motif detection, binary classification
+- **Application**: Promoter region detection in DNA sequences
+- **Key Learning**: How CNNs detect patterns in sequential biological data
+
+#### 2. RNN/LSTM for Protein Sequence Analysis
+**File**: `notebooks/02_RNN_LSTM_Protein_Sequence.ipynb`
+- **Cells**: 30 total (16 markdown, 14 code)
+- **Topics**: Embeddings, bidirectional LSTMs, variable-length sequences
+- **Application**: Protein family classification (Kinase, Protease, Transporter)
+- **Key Learning**: How recurrent networks handle sequential dependencies
+
+#### 3. Autoencoder for Gene Expression Analysis
+**File**: `notebooks/03_Autoencoder_Gene_Expression.ipynb`
+- **Cells**: 28 total (15 markdown, 13 code)
+- **Topics**: Unsupervised learning, dimensionality reduction, latent representations
+- **Application**: Gene expression data compression and visualization
+- **Key Learning**: How autoencoders discover structure in high-dimensional data
+
+#### 4. Transfer Learning for Cell Image Classification
+**File**: `notebooks/04_Transfer_Learning_Cell_Images.ipynb`
+- **Cells**: 28 total (15 markdown, 13 code)
+- **Topics**: Pre-trained models, fine-tuning, data augmentation
+- **Application**: Cell type identification from microscopy images
+- **Key Learning**: How to leverage pre-trained models for new tasks
+
 ### Documentation
 
 - **README.md**: Main project overview with navigation
 - **QUICKSTART.md**: 5-minute setup guide for beginners
+- **GETTING_STARTED.md**: Detailed setup instructions
+- **QUICK_REFERENCE.md**: Quick reference guide for common tasks
 - **CONTRIBUTING.md**: Guidelines for contributors
 - **BUILD_BOOK.md**: Instructions for building as Jupyter Book
 - **LICENSE**: MIT License
@@ -27,10 +63,27 @@ This is a comprehensive, user-friendly deep learning codebook designed for biolo
 
 ### Configuration Files
 
-- **requirements.txt**: All Python dependencies
+- **requirements-pytorch.txt**: PyTorch-focused dependencies (recommended)
+- **requirements-tensorflow.txt**: TensorFlow-focused dependencies
+- **requirements.txt**: Combined requirements with both frameworks
 - **.gitignore**: Git ignore rules for Python/Jupyter
 - **_config.yml**: Jupyter Book configuration
 - **_toc.yml**: Table of contents for book building
+- **test_setup.py**: Environment validation script
+
+### Docker Infrastructure
+
+#### Dockerfile
+- **Base**: NVIDIA CUDA 12.1.0 with cuDNN 8 on Ubuntu 22.04
+- **GPU Support**: Full CUDA support for GPU-accelerated training
+- **Python**: 3.10 with all required scientific libraries
+- **Jupyter**: Pre-configured with open access on port 8888
+
+#### docker-compose.yml
+- **One-command setup**: `docker-compose up`
+- **GPU access**: Automatic NVIDIA GPU detection
+- **Volume mounting**: Notebooks and data persist on host
+- **Port mapping**: Jupyter accessible at localhost:8888
 
 ### Data Resources
 
@@ -58,7 +111,8 @@ This is a comprehensive, user-friendly deep learning codebook designed for biolo
 
 ### 4. Production-Ready
 - **Tested Notebooks**: All JSON validated
-- **Complete Dependencies**: Full requirements.txt
+- **Complete Dependencies**: Full requirements files
+- **Docker Support**: Reproducible environment
 - **Proper Licensing**: MIT License included
 - **Git-Ready**: Proper .gitignore configuration
 
@@ -70,9 +124,12 @@ After completing this codebook, learners will be able to:
 2. ✅ Build and train CNNs for image analysis
 3. ✅ Implement Transformer architectures
 4. ✅ Use Vision Transformers for advanced vision tasks
-5. ✅ Apply deep learning to biological data
-6. ✅ Choose appropriate architectures for different problems
-7. ✅ Debug and optimize deep learning models
+5. ✅ Apply deep learning to DNA, protein, and gene expression data
+6. ✅ Use RNNs/LSTMs for sequence modeling
+7. ✅ Apply autoencoders for unsupervised learning
+8. ✅ Leverage transfer learning for biological images
+9. ✅ Choose appropriate architectures for different problems
+10. ✅ Debug and optimize deep learning models
 
 ## 🎓 Target Audience
 
@@ -88,14 +145,19 @@ After completing this codebook, learners will be able to:
 ```bash
 git clone https://github.com/tonyliang19/deep-learning-biology-codebook.git
 cd deep-learning-biology-codebook
-pip install -r requirements.txt
+pip install -r requirements-pytorch.txt
 jupyter lab
+```
+
+### With Docker
+```bash
+docker-compose up
+# Access at http://localhost:8888
 ```
 
 ### As Online Book
 ```bash
 jupyter-book build .
-# Publish to GitHub Pages
 ghp-import -n -p -f _build/html
 ```
 
@@ -107,32 +169,35 @@ ghp-import -n -p -f _build/html
 
 ## 📏 Project Metrics
 
-- **Total Notebooks**: 5
-- **Total Cells**: 47 (25 markdown, 22 code)
-- **Approximate Words**: ~2,800
-- **Topics Covered**: 15+
-- **Code Examples**: 20+
-- **Documentation Files**: 6
-- **Total Files**: 15
+- **Total Notebooks**: 9 (5 fundamental + 4 applied)
+- **Total Cells**: ~162 (markdown + code)
+- **Topics Covered**: 20+
+- **Code Examples**: 40+
+- **Documentation Files**: 9
+- **Total Files**: 27
+- **Lines of Documentation**: ~2,500+
 
 ## 🌟 Unique Selling Points
 
 1. **Biology-Focused**: Specifically designed for biological applications
-2. **Complete Package**: Everything needed in one repository
-3. **Book Format**: Can be used as textbook or reference
-4. **Practical**: Working code, not just theory
-5. **Modern**: Covers latest architectures (ViT, Transformers)
-6. **Accessible**: Clear explanations for beginners
-7. **Extensible**: Easy to add new chapters/topics
+2. **Dual Track**: Both educational fundamentals and applied examples
+3. **Complete Package**: Everything needed in one repository
+4. **Book Format**: Can be used as textbook or reference
+5. **Practical**: Working code, not just theory
+6. **Modern**: Covers latest architectures (ViT, Transformers)
+7. **Accessible**: Clear explanations for beginners
+8. **Professional**: Docker support, proper testing, documentation
+9. **Extensible**: Easy to add new chapters/topics
 
 ## 🔮 Future Enhancements (Potential)
 
-- Additional chapters (RNNs, GANs, Graph Neural Networks)
-- More biology applications (drug discovery, genomics)
+- Additional chapters (GANs, Graph Neural Networks, Reinforcement Learning)
+- More biology applications (drug discovery, genomics, structural biology)
 - Video tutorials
 - Interactive exercises with solutions
 - Deployment guides
 - Cloud computing integration
+- Advanced optimization techniques
 
 ## 📞 Support & Community
 
@@ -149,5 +214,5 @@ MIT License - Free for educational and commercial use
 
 **Created with ❤️ for the biology and deep learning community**
 
-*Version: 1.0*  
+*Version: 2.0 (Merged)*  
 *Last Updated: 2024*
