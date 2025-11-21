@@ -22,8 +22,8 @@ conda create -n dl-bio python=3.8
 # Activate environment
 conda activate dl-bio
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (PyTorch recommended)
+pip install -r requirements-pytorch.txt
 ```
 
 **Option B: Using venv**
@@ -38,8 +38,8 @@ source venv/bin/activate
 # Activate (Windows)
 .\venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (PyTorch recommended)
+pip install -r requirements-pytorch.txt
 ```
 
 ### Step 3: Launch Jupyter

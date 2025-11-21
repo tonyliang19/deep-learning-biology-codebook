@@ -69,6 +69,13 @@ git clone https://github.com/tonyliang19/deep-learning-biology-codebook.git
 cd deep-learning-biology-codebook
 
 # Install dependencies
+# Option 1: PyTorch (recommended - most examples use PyTorch)
+pip install -r requirements-pytorch.txt
+
+# Option 2: TensorFlow
+pip install -r requirements-tensorflow.txt
+
+# Option 3: Both frameworks (if you want to use both)
 pip install -r requirements.txt
 ```
 
@@ -100,10 +107,12 @@ This repository can be converted into a beautiful online book! See [BUILD_BOOK.m
 
 ## 🔧 Requirements
 
-See [requirements.txt](requirements.txt) for the complete list of dependencies.
+See [requirements-pytorch.txt](requirements-pytorch.txt) or [requirements-tensorflow.txt](requirements-tensorflow.txt) for dependencies.
+
+**Recommended**: Use PyTorch (most examples use PyTorch)
 
 Main libraries used:
-- PyTorch / TensorFlow for deep learning
+- PyTorch or TensorFlow for deep learning
 - NumPy and Pandas for data manipulation
 - Matplotlib and Seaborn for visualization
 - Transformers library for pre-trained models

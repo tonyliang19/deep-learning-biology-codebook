@@ -150,7 +150,9 @@ execute:
 ### Missing dependencies
 
 ```bash
-pip install -r requirements.txt
+# Install all dependencies needed for building
+pip install -r requirements-pytorch.txt
+pip install jupyter-book ghp-import
 ```
 
 ## Continuous Integration
@@ -179,7 +181,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        pip install -r requirements-pytorch.txt
         pip install jupyter-book ghp-import
     
     - name: Build book
