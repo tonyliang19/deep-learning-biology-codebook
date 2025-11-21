@@ -1,5 +1,9 @@
 # Deep Learning Biology Codebook 📚
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Jupyter Book](https://img.shields.io/badge/Jupyter-Book-orange.svg)](https://jupyterbook.org/)
+
 A comprehensive, user-friendly guide to deep learning with a focus on biological applications. This codebook provides in-depth explanations and practical examples covering everything from basic neural networks to advanced architectures like Transformers and Vision Transformers.
 
 ## 🎯 Purpose
@@ -86,6 +90,14 @@ Then navigate to the `notebooks/` directory and start with `00_index.ipynb`.
 3. **Hands-on Practice**: Run all code cells and experiment with parameters
 4. **Biology Focus**: Pay special attention to the biology application sections
 
+### Using as an Interactive Book
+
+This repository can be converted into a beautiful online book! See [BUILD_BOOK.md](BUILD_BOOK.md) for instructions on:
+- Building HTML version
+- Publishing to GitHub Pages
+- Creating PDF version
+- Customizing the appearance
+
 ## 🔧 Requirements
 
 See [requirements.txt](requirements.txt) for the complete list of dependencies.
@@ -98,15 +110,26 @@ Main libraries used:
 
 ## 📝 Contributing
 
-Contributions are welcome! If you find errors or have suggestions for improvements:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+Contributions are welcome! If you find errors or have suggestions for improvements, please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
+- Reporting issues
+- Suggesting enhancements
+- Submitting pull requests
+- Notebook guidelines
+- Code style
+
+## 🌟 Features
+
+✨ **Comprehensive Coverage**: From basics to advanced topics  
+📖 **In-depth Explanations**: Theory + Math + Code  
+🧬 **Biology-Focused**: Real biological applications  
+💻 **Working Code**: All examples tested and runnable  
+📊 **Rich Visualizations**: Plots, diagrams, and illustrations  
+📚 **Book Format**: Can be built as interactive online book  
+🚀 **Easy Setup**: Clear installation and usage instructions  
 
 ## 📄 License
 
-This project is open source and available for educational purposes.
+This project is open source and available under the MIT License for educational purposes.
 
 ## 🙏 Acknowledgments
 
