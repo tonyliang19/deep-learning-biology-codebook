@@ -22,8 +22,8 @@ conda create -n dl-bio python=3.8
 # Activate environment
 conda activate dl-bio
 
-# Install dependencies (PyTorch recommended)
-pip install -r requirements-pytorch.txt
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 **Option B: Using venv**
@@ -38,8 +38,8 @@ source venv/bin/activate
 # Activate (Windows)
 .\venv\Scripts\activate
 
-# Install dependencies (PyTorch recommended)
-pip install -r requirements-pytorch.txt
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 ### Step 3: Launch Jupyter
@@ -82,7 +82,7 @@ Open `notebooks/00_index.ipynb` and run the first code cell:
 import sys
 print(f"Python version: {sys.version}")
 
-libraries = ['torch', 'tensorflow', 'numpy', 'pandas', 'matplotlib']
+libraries = ['torch', 'numpy', 'pandas', 'matplotlib']
 for lib in libraries:
     try:
         module = __import__(lib)
@@ -212,7 +212,6 @@ pip install <module-name>
 
 ### Documentation
 - [PyTorch Documentation](https://pytorch.org/docs/)
-- [TensorFlow Documentation](https://www.tensorflow.org/api_docs)
 - [Hugging Face Transformers](https://huggingface.co/docs/transformers/)
 
 ## 🎓 After Completion
