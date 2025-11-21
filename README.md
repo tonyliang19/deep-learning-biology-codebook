@@ -168,6 +168,16 @@ Main libraries used:
 🐳 **Docker Support**: Reproducible environment  
 🚀 **Easy Setup**: Clear installation and usage instructions  
 
+## 📚 Additional Learning Resources
+
+Looking to deepen your knowledge? Check out [RESOURCES.md](RESOURCES.md) for a comprehensive collection of:
+- **Books**: Essential texts on deep learning and bioinformatics
+- **Online Courses**: From Coursera, Fast.ai, MIT, and more
+- **Research Papers**: Key papers in deep learning for biology
+- **Tools & Software**: DeepChem, AlphaFold, ESM, and other specialized tools
+- **Datasets**: Public repositories like GenBank, UniProt, PDB, ChEMBL
+- **Communities**: Forums and discussion groups for continued learning
+
 ## 📝 Contributing
 
 Contributions are welcome! If you find errors or have suggestions for improvements, please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
