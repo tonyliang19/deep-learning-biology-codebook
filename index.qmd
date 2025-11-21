@@ -1,0 +1,134 @@
+# Deep Learning Biology Codebook 📚 {.unnumbered}
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+
+A comprehensive, user-friendly guide to deep learning with a focus on biological applications. This codebook provides in-depth explanations and practical examples covering everything from basic neural networks to advanced architectures like Transformers and Vision Transformers.
+
+## 🎯 Purpose
+
+This codebook is designed to be:
+
+- **Educational**: Step-by-step explanations with mathematical foundations made accessible
+- **Practical**: Working code examples you can run and modify
+- **Comprehensive**: Covers fundamental to advanced topics
+- **Biology-focused**: Examples and applications relevant to biological data
+- **Beginner-friendly**: Written for university year 2 students with basic programming knowledge
+
+## 📖 Book Structure
+
+### Part I: Fundamentals
+
+Build your foundation in deep learning with comprehensive theory and implementation:
+
+**Chapter 1: Neural Networks Basics** - Learn about perceptrons, activation functions, forward and backward propagation, and train your first neural network.
+
+**Chapter 2: Convolutional Neural Networks** - Understand convolutions, CNN architectures, and how they process spatial data.
+
+**Chapter 3: Transformers** - Explore attention mechanisms, self-attention, and the revolutionary transformer architecture.
+
+**Chapter 4: Vision Transformers** - Discover how transformers are applied to computer vision tasks.
+
+### Part II: Applied Examples
+
+Put theory into practice with complete biological applications:
+
+**Chapter 5: CNN for DNA Sequence Classification** - Identify promoter regions in DNA sequences using convolutional networks.
+
+**Chapter 6: RNN/LSTM for Protein Sequence Analysis** - Classify protein families using recurrent neural networks.
+
+**Chapter 7: Autoencoder for Gene Expression Analysis** - Perform dimensionality reduction on gene expression data.
+
+**Chapter 8: Transfer Learning with Cell Images** - Fine-tune pre-trained models for cell image classification.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+```bash
+# Python 3.8 or higher
+python --version
+```
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/tonyliang19/deep-learning-biology-codebook.git
+cd deep-learning-biology-codebook
+
+# Install dependencies (PyTorch-based)
+pip install -r requirements.txt
+```
+
+### Running the Notebooks
+
+```bash
+# Start Jupyter
+jupyter notebook
+
+# Or use JupyterLab
+jupyter lab
+```
+
+Then navigate to the `notebooks/` directory and start with Chapter 1.
+
+### Building the Book
+
+This book is built with [Quarto](https://quarto.org/):
+
+```bash
+# Install Quarto (if not already installed)
+# Visit https://quarto.org/docs/get-started/
+
+# Render the book
+quarto render
+
+# Preview the book
+quarto preview
+```
+
+## 🔧 Requirements
+
+See [requirements.txt](requirements.txt) for all dependencies.
+
+Main libraries used:
+
+- **PyTorch** for deep learning
+- **NumPy** and **Pandas** for data manipulation
+- **Matplotlib** and **Seaborn** for visualization
+- **Transformers** library for pre-trained models
+- **Biopython** and **scikit-bio** for biology-specific operations
+
+## 🌟 Features
+
+✨ **Comprehensive Coverage**: From basics to advanced topics  
+📖 **In-depth Explanations**: Theory + Math + Code with accessible language  
+🧬 **Biology-Focused**: Real biological applications  
+💻 **Working Code**: All examples tested and runnable  
+📊 **Rich Visualizations**: Plots, diagrams, and illustrations  
+📚 **Interactive Book**: Built with Quarto for beautiful rendering  
+🐳 **Docker Support**: Reproducible environment  
+🚀 **Easy Setup**: Clear installation and usage instructions  
+
+## 📚 Additional Resources
+
+For more information, check out the [docs/](docs/) directory:
+
+- **[RESOURCES.md](docs/RESOURCES.md)**: Books, courses, papers, tools, and datasets
+- **[CONTRIBUTING.md](docs/CONTRIBUTING.md)**: Guidelines for contributing
+- **[QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md)**: Quick reference guide
+- **[QUICKSTART.md](docs/QUICKSTART.md)**: Quick start guide
+- **[USAGE.md](docs/USAGE.md)**: Detailed usage instructions
+
+## 📧 Contact
+
+For questions or feedback, please open an issue on GitHub.
+
+## 📄 License
+
+This project is open source and available under the MIT License for educational purposes.
+
+---
+
+**Happy Learning! 🧬🤖**

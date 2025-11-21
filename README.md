@@ -2,34 +2,34 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Jupyter Book](https://img.shields.io/badge/Jupyter-Book-orange.svg)](https://jupyterbook.org/)
+[![Quarto](https://img.shields.io/badge/Made%20with-Quarto-blue.svg)](https://quarto.org/)
 
-A comprehensive, user-friendly guide to deep learning with a focus on biological applications. This codebook provides in-depth explanations and practical examples covering everything from basic neural networks to advanced architectures like Transformers and Vision Transformers.
+A comprehensive, beginner-friendly guide to deep learning with a focus on biological applications. This codebook provides in-depth explanations and practical examples covering everything from basic neural networks to advanced architectures like Transformers and Vision Transformers. All content is designed to be accessible to university year 2 students with basic programming knowledge.
 
 ## 🎯 Purpose
 
 This codebook is designed to be:
-- **Educational**: Step-by-step explanations with mathematical foundations
+- **Beginner-Friendly**: Written for university year 2 students with basic programming knowledge
+- **Educational**: Step-by-step explanations with mathematical foundations made accessible
 - **Practical**: Working code examples you can run and modify
-- **Comprehensive**: Covers fundamental to advanced topics
+- **Comprehensive**: Covers fundamental to advanced topics with detailed explanations
 - **Biology-focused**: Examples and applications relevant to biological data
 
 ## 📖 Learning Track: Fundamentals
 
-### [0. Index & Quick Start](notebooks/00_index.ipynb)
-Start here for an overview and quick navigation guide
-
 ### [1. Introduction to Neural Networks](notebooks/01_neural_networks_basics.ipynb)
-- What are Neural Networks?
+Learn the basics with enhanced explanations designed for beginners:
+- What are Neural Networks? (Intuitive explanations with real-world analogies)
 - Perceptrons and Multi-Layer Perceptrons (MLPs)
-- Activation Functions
+- Activation Functions (Step-by-step mathematical explanations)
 - Forward and Backward Propagation
 - Loss Functions and Optimization
 - Training Your First Neural Network
 - **Biology Application**: Gene Expression Classification
 
 ### [2. Convolutional Neural Networks (CNNs)](notebooks/02_convolutional_networks.ipynb)
-- Understanding Convolutions
+Understand CNNs with detailed visual explanations:
+- Understanding Convolutions (Why they're needed for images)
 - CNN Architecture Components
   - Convolutional Layers
   - Pooling Layers
@@ -39,7 +39,8 @@ Start here for an overview and quick navigation guide
 - **Biology Application**: Cell Image Classification
 
 ### [3. Transformers](notebooks/03_transformers.ipynb)
-- Attention Mechanism
+Demystify transformers with accessible explanations:
+- Attention Mechanism (The key innovation explained simply)
 - Self-Attention and Multi-Head Attention
 - Positional Encoding
 - Transformer Architecture
@@ -47,8 +48,9 @@ Start here for an overview and quick navigation guide
 - **Biology Application**: Protein Sequence Analysis
 
 ### [4. Vision Transformers (ViT)](notebooks/04_vision_transformers.ipynb)
+Learn cutting-edge computer vision:
 - From CNN to ViT
-- Patch Embedding
+- Patch Embedding (Breaking images into pieces)
 - ViT Architecture
 - Comparing ViT with CNNs
 - Hybrid Architectures
@@ -56,27 +58,31 @@ Start here for an overview and quick navigation guide
 
 ## 📊 Applied Notebooks: Real-World Biology Examples
 
-These notebooks provide complete, end-to-end examples of applying deep learning to real biological problems:
+These notebooks provide complete, end-to-end examples of applying deep learning to real biological problems, with enhanced step-by-step explanations:
 
-### [CNN for DNA Sequence Classification](notebooks/01_CNN_DNA_Sequence_Classification.ipynb)
+### [5. CNN for DNA Sequence Classification](notebooks/05_CNN_DNA_Sequence_Classification.ipynb)
 Learn how CNNs identify patterns in DNA sequences for promoter region detection.
 
-**Topics**: One-hot encoding, Conv1D layers, motif visualization, binary classification
+**Topics**: One-hot encoding, Conv1D layers, motif visualization, binary classification  
+**New explanations**: Detailed introduction to promoters, DNA representation, and biological context
 
-### [RNN/LSTM for Protein Sequence Analysis](notebooks/02_RNN_LSTM_Protein_Sequence.ipynb)
+### [6. RNN/LSTM for Protein Sequence Analysis](notebooks/06_RNN_LSTM_Protein_Sequence.ipynb)
 Explore RNNs and LSTMs for protein family classification.
 
-**Topics**: Embeddings, bidirectional LSTM, variable-length sequences, multi-class classification
+**Topics**: Embeddings, bidirectional LSTM, variable-length sequences, multi-class classification  
+**New explanations**: What proteins are, why sequence classification matters, RNN advantages
 
-### [Autoencoder for Gene Expression Analysis](notebooks/03_Autoencoder_Gene_Expression.ipynb)
+### [7. Autoencoder for Gene Expression Analysis](notebooks/07_Autoencoder_Gene_Expression.ipynb)
 Discover unsupervised learning with autoencoders for dimensionality reduction.
 
-**Topics**: Encoder-decoder architecture, latent space, clustering, comparison with PCA
+**Topics**: Encoder-decoder architecture, latent space, clustering, comparison with PCA  
+**New explanations**: Gene expression data basics, dimensionality reduction need, autoencoder intuition
 
-### [Transfer Learning with Cell Images](notebooks/04_Transfer_Learning_Cell_Images.ipynb)
+### [8. Transfer Learning with Cell Images](notebooks/08_Transfer_Learning_Cell_Images.ipynb)
 Master transfer learning for cell image classification with pre-trained models.
 
-**Topics**: Fine-tuning, feature extraction, data augmentation, model comparison
+**Topics**: Fine-tuning, feature extraction, data augmentation, model comparison  
+**New explanations**: Small data problem in biology, transfer learning strategy, feature extraction vs fine-tuning
 
 ## 🚀 Getting Started
 
@@ -131,11 +137,29 @@ See [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md) for detailed setup instru
 
 ### Using as an Interactive Book
 
-This repository can be converted into a beautiful online book! See [docs/BUILD_BOOK.md](docs/BUILD_BOOK.md) for instructions on:
-- Building HTML version
+This repository is built as a beautiful interactive book using [Quarto](https://quarto.org/)!
+
+**Build the book locally:**
+```bash
+# Install Quarto from https://quarto.org/docs/get-started/
+
+# Render the book
+quarto render
+
+# Preview the book (opens in browser)
+quarto preview
+```
+
+The rendered book includes:
+- **All code outputs**: See plots, tables, and results directly in the book
+- **Syntax highlighting**: Beautiful code formatting
+- **Interactive navigation**: Table of contents, search functionality
+- **Mobile-friendly**: Responsive design works on all devices
+
+See [docs/BUILD_BOOK.md](docs/BUILD_BOOK.md) for more details on:
 - Publishing to GitHub Pages
-- Creating PDF version
 - Customizing the appearance
+- Adding custom styling
 
 ## 🔧 Requirements
 
