@@ -151,7 +151,7 @@ execute:
 
 ```bash
 # Install all dependencies needed for building
-pip install -r requirements-pytorch.txt
+pip install -r requirements.txt
 pip install jupyter-book ghp-import
 ```
 
@@ -181,7 +181,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        pip install -r requirements-pytorch.txt
+        pip install -r requirements.txt
         pip install jupyter-book ghp-import
     
     - name: Build book

@@ -120,8 +120,8 @@ The main packages you'll be using include:
 
 **Deep Learning Frameworks:**
 - `torch` (PyTorch) - Primary DL framework
-- `tensorflow` (optional) - Alternative framework
-- `keras` (optional) - High-level API
+- `torchvision` - Computer vision utilities
+- `torchaudio` - Audio processing utilities
 
 **Biology & Bioinformatics:**
 - `biopython` - Sequence analysis
@@ -371,27 +371,15 @@ if torch.cuda.is_available():
     print("Device name:", torch.cuda.get_device_name(0))
 ```
 
-#### TensorFlow
-
-```python
-import tensorflow as tf
-
-print("GPU devices:", tf.config.list_physical_devices('GPU'))
-print("Built with CUDA:", tf.test.is_built_with_cuda())
-```
-
 ### Using GPU in Notebooks
 
-Most notebooks automatically use GPU if available:
+All notebooks use PyTorch and automatically use GPU if available:
 
 ```python
 # PyTorch - models and tensors are moved to GPU
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = model.to(device)
 inputs = inputs.to(device)
-
-# TensorFlow - automatically uses GPU
-# No explicit code needed in most cases
 ```
 
 ### GPU Memory Management
@@ -414,9 +402,6 @@ To force CPU execution (useful for debugging):
 ```python
 # PyTorch
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = ""
-
-# TensorFlow
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
 ```
 

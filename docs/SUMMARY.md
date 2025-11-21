@@ -63,13 +63,12 @@ Complete, end-to-end examples of applying deep learning to real biological probl
 
 ### Configuration Files
 
-- **requirements-pytorch.txt**: PyTorch-focused dependencies (recommended)
-- **requirements-tensorflow.txt**: TensorFlow-focused dependencies
-- **requirements.txt**: Combined requirements with both frameworks
+- **requirements.txt**: PyTorch-based dependencies
 - **.gitignore**: Git ignore rules for Python/Jupyter
 - **_config.yml**: Jupyter Book configuration
 - **_toc.yml**: Table of contents for book building
 - **test_setup.py**: Environment validation script
+- **environment.yml**: Conda environment specification
 
 ### Docker Infrastructure
 
@@ -145,7 +144,7 @@ After completing this codebook, learners will be able to:
 ```bash
 git clone https://github.com/tonyliang19/deep-learning-biology-codebook.git
 cd deep-learning-biology-codebook
-pip install -r requirements-pytorch.txt
+pip install -r requirements.txt
 jupyter lab
 ```
 
