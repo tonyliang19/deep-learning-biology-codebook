@@ -92,14 +92,7 @@ python --version
 git clone https://github.com/tonyliang19/deep-learning-biology-codebook.git
 cd deep-learning-biology-codebook
 
-# Install dependencies
-# Option 1: PyTorch (recommended - most examples use PyTorch)
-pip install -r requirements-pytorch.txt
-
-# Option 2: TensorFlow
-pip install -r requirements-tensorflow.txt
-
-# Option 3: Both frameworks (if you want to use both)
+# Install dependencies (PyTorch-based)
 pip install -r requirements.txt
 ```
 
@@ -126,7 +119,7 @@ docker-compose up
 # Token will be displayed in the terminal
 ```
 
-See [GETTING_STARTED.md](GETTING_STARTED.md) for detailed setup instructions.
+See [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md) for detailed setup instructions.
 
 ## 📚 How to Use This Codebook
 
@@ -138,7 +131,7 @@ See [GETTING_STARTED.md](GETTING_STARTED.md) for detailed setup instructions.
 
 ### Using as an Interactive Book
 
-This repository can be converted into a beautiful online book! See [BUILD_BOOK.md](BUILD_BOOK.md) for instructions on:
+This repository can be converted into a beautiful online book! See [docs/BUILD_BOOK.md](docs/BUILD_BOOK.md) for instructions on:
 - Building HTML version
 - Publishing to GitHub Pages
 - Creating PDF version
@@ -146,12 +139,10 @@ This repository can be converted into a beautiful online book! See [BUILD_BOOK.m
 
 ## 🔧 Requirements
 
-See [requirements-pytorch.txt](requirements-pytorch.txt) or [requirements-tensorflow.txt](requirements-tensorflow.txt) for dependencies.
-
-**Recommended**: Use PyTorch (most examples use PyTorch)
+See [requirements.txt](requirements.txt) for all dependencies.
 
 Main libraries used:
-- PyTorch or TensorFlow for deep learning
+- PyTorch for deep learning
 - NumPy and Pandas for data manipulation
 - Matplotlib and Seaborn for visualization
 - Transformers library for pre-trained models
@@ -168,24 +159,15 @@ Main libraries used:
 🐳 **Docker Support**: Reproducible environment  
 🚀 **Easy Setup**: Clear installation and usage instructions  
 
-## 📚 Additional Learning Resources
+## 📚 Additional Resources
 
-Looking to deepen your knowledge? Check out [RESOURCES.md](RESOURCES.md) for a comprehensive collection of:
-- **Books**: Essential texts on deep learning and bioinformatics
-- **Online Courses**: From Coursera, Fast.ai, MIT, and more
-- **Research Papers**: Key papers in deep learning for biology
-- **Tools & Software**: DeepChem, AlphaFold, ESM, and other specialized tools
-- **Datasets**: Public repositories like GenBank, UniProt, PDB, ChEMBL
-- **Communities**: Forums and discussion groups for continued learning
-
-## 📝 Contributing
-
-Contributions are welcome! If you find errors or have suggestions for improvements, please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
-- Reporting issues
-- Suggesting enhancements
-- Submitting pull requests
-- Notebook guidelines
-- Code style
+For more information, check out the [docs/](docs/) directory:
+- **[RESOURCES.md](docs/RESOURCES.md)**: Books, courses, papers, tools, and datasets
+- **[CONTRIBUTING.md](docs/CONTRIBUTING.md)**: Guidelines for contributing
+- **[QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md)**: Quick reference guide
+- **[QUICKSTART.md](docs/QUICKSTART.md)**: Quick start guide
+- **[USAGE.md](docs/USAGE.md)**: Detailed usage instructions
+- **[SUMMARY.md](docs/SUMMARY.md)**: Content summary
 
 ## 🙏 Acknowledgments
 
