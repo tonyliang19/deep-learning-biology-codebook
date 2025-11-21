@@ -1,0 +1,144 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+
+# TensorFlow
+*.h5
+*.pb
+saved_model/
+checkpoint
+
+# Data files (large datasets)
+*.csv
+*.tsv
+*.fasta
+*.fastq
+*.fa
+*.fq
+*.bam
+*.sam
+*.vcf
+*.bed
+*.bigWig
+*.bw
+*.bigBed
+*.bb
+
+# Compressed files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.gz
+*.bz2
+
+# Model checkpoints and logs
+models/*.pth
+models/*.pt
+models/*.h5
+logs/
+runs/
+wandb/
+mlruns/
+
+# Cache directories
+.cache/
+cache/
+data/cache/
+__MACOSX/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project specific
+results/
+outputs/
+tmp/
+temp/
+
+# Keep directory structure but ignore contents
+data/*
+!data/.gitkeep
+!data/README.md
+!data/download_scripts/
+
+models/*
+!models/.gitkeep
+!models/README.md
+
+results/*
+!results/.gitkeep
+!results/README.md
+
+# Exceptions (files to keep)
+!data/sample_data/
+!notebooks/**/*.ipynb
+
+# Environment files (keep templates)
+!environment.yml.template
+!requirements.txt.template
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
